@@ -13,6 +13,7 @@ public class FinalizeEscapeGC {
         System.out.println("yes,i am still live :");
     }
     
+    @Override
     protected void finalize() throws Throwable {
         super.finalize(); // Object自带该方法
         System.out.println("finalize method executed!");
